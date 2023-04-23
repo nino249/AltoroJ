@@ -8,8 +8,8 @@ jobs:
       - name: Publish issues to ASoC
         uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v2
         with:
-          asoc_key: ${{ secrets.ASOC_API_KEY }}
-          asoc_secret: ${{ secrets.ASOC_API_SECRET }}
+          asoc_key: ${{ secrets.ASOC_KEY }}
+          asoc_secret: ${{ secrets.ASOC_SECRET }}
           publish_on_merge: true
           application_id: ${{vars.ASOC_APPID }}
     env: 
