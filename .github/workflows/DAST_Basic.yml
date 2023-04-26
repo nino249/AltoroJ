@@ -1,6 +1,7 @@
 name: "HCL AppScan DAST - basic"
 on:
-  workflow_dispatch
+  pull_request:
+    types: [opened, reopened]
 jobs:
   scan:
     runs-on: ubuntu-latest
