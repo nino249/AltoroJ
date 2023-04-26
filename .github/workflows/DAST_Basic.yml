@@ -13,7 +13,7 @@ jobs:
           baseurl:  https://cloud.appscan.com/eu
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
-          application_id: ${{vars.ASOC_APPID}
+          application_id: ${{vars.ASOC_APPID}}
           scan_type: 'staging'
           dynamic_scan_type: dast
           starting_URL: 'https://demo.testfire.net?mode=demo'
