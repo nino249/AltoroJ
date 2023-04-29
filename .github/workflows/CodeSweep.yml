@@ -13,5 +13,7 @@ jobs:
         with:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
+          # The default is status: neutral
+          # status: failure
     env: 
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
