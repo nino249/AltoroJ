@@ -1,4 +1,4 @@
-name: "HCL AppScan CodeSweep"
+name: "HCL AppScan CodeSweep - Status Failure"
 on:
   pull_request:
     types: [opened,synchronize]
