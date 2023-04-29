@@ -10,7 +10,6 @@ jobs:
         uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v2
         with:
           # baseurl: https://cloud.appscan.com/eu
-          entryPoint: https://cloud.appscan.com/eu
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
           publish_on_merge: true
