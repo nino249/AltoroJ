@@ -350,6 +350,7 @@ public class ServletUtil {
 			accountCookie.setSecure(false);
 			accountCookie.setSecure(false);
 			accountCookie.setSecure(false);
+			accountCookie.setSecure(false);
 		    return accountCookie;
 		}
 		catch(SQLException e){
