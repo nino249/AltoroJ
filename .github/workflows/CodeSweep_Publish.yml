@@ -1,4 +1,4 @@
-name: "HCL AppScan CodeSweep Publish NA"
+name: "HCL AppScan CodeSweep Publish EU"
 on:
   pull_request:
     types: [closed]
@@ -10,9 +10,9 @@ jobs:
         uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v2
         with:
           # baseurl: https://cloud.appscan.com/eu
-          asoc_key: ${{secrets.ASOC_API_KEY}}
-          asoc_secret: ${{secrets.ASOC_API_SECRET}}
+          asoc_key: ${{secrets.ASOC_KEY}}
+          asoc_secret: ${{secrets.ASOC_SECRET}}
           publish_on_merge: true
-          application_id: ${{vars.ASOC_APP_ID}}
+          application_id: ${{vars.ASOC_APPID}}
     env: 
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
